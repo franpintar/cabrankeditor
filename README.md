@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.svg" alt="CabrankEditor logo" width="180" />
+</p>
+
 # Cabrankeditor
 
 Web-based editor frontend for the **[Cabrankengine](https://github.com/cabranca/cabrankengine)** game engine. The engine is a C++ ECS runtime compiled to WebAssembly (via Emscripten); this React app acts as its host and provides the editor UI.
