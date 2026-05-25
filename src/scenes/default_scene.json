@@ -1,0 +1,187 @@
+{
+    "version": 1,
+    "metadata": {
+        "name": "DefaultScene",
+        "ambient_color": [
+            0.05,
+            0.05,
+            0.08,
+            1.0
+        ],
+        "background_color": [
+            0.12,
+            0.12,
+            0.18,
+            1.0
+        ]
+    },
+    "entities": [
+        {
+            "name": "Main Camera",
+            "components": {
+                "CTransform": {
+                    "position": [
+                        0.0,
+                        1.0,
+                        8.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "CCamera": {
+                    "type": "perspective",
+                    "is_active": true,
+                    "fov_y": 0.7853981852531433,
+                    "aspect_ratio": 1.77777777778,
+                    "near": 0.1,
+                    "far": 200.0,
+                    "ortho_size": 10.0
+                },
+                "CCameraController": {
+                    "translation_speed": 5.0,
+                    "mouse_sensitivity": 0.1,
+                    "yaw": 0.0,
+                    "pitch": 0.0
+                }
+            }
+        },
+        {
+            "name": "Sun",
+            "components": {
+                "CTransform": {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "CDirectionalLight": {
+                    "direction": [
+                        -0.3,
+                        -1.0,
+                        -0.5
+                    ],
+                    "radiance": [
+                        1.0,
+                        0.95,
+                        0.85
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Fill Light",
+            "components": {
+                "CTransform": {
+                    "position": [
+                        -5.0,
+                        3.0,
+                        5.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "CPointLight": {
+                    "radiance": [
+                        0.4,
+                        0.5,
+                        0.9
+                    ],
+                    "constant": 1.0,
+                    "linear": 0.07,
+                    "quadratic": 0.017
+                }
+            }
+        },
+        {
+            "name": "Title",
+            "components": {
+                "CTransform": {
+                    "position": [
+                        -2.0,
+                        0.5,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "CText": {
+                    "text": "CabrankEngine",
+                    "font_scale": 0.08,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Subtitle",
+            "components": {
+                "CTransform": {
+                    "position": [
+                        -1.2,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "CText": {
+                    "text": "Web Editor",
+                    "font_scale": 0.05,
+                    "color": [
+                        0.6,
+                        0.6,
+                        0.7,
+                        1.0
+                    ]
+                }
+            }
+        }
+    ]
+}
